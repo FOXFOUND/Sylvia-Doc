@@ -18,8 +18,11 @@ Sylvia-Doc English Version：[README-EN.md](README-EN.md)
 ## Sylvia架构(草稿状态)
 
 技术栈：Golang/Python
+
 通信方式：Rest API/GRPC
+
 数据存储：K8S CRD/PVC
+
 缓存：Redis
 
 ### 管理平面：
@@ -66,10 +69,12 @@ Sylvia将边缘节点划分如下两种模式：
 
 #### 裸机模式：
 ![](IMG/Edge-Panel-Bare-Machine.png)
+
 裸机模式：边缘客户端主进程执行在传统VM、PM主机中，通过该主进程Fork新的Sub进程以实现。
 
 #### 容器(基于K8S)模式：
 ![](IMG/Edge-Panel-Container-K8S-pattern.png)
+
 容器模式：边缘客户端主进程为Kubernetes集群中的一个Deployment，该工作负载具备对应NS下所有资源的操作权限。
 
 当新的作业需求过来时，将以Pod形式在该NS下执行。
