@@ -5,12 +5,12 @@ Sylvia-Doc English Version：[README-EN.md](README-EN.md)
 
 ## Sylvia功能
 
-面向边缘计算的DevOps平台，具备如下功能
+面向边缘计算的作业平台，具备如下功能
 ```
 管理平面：
   |- 多集群同步/高可用
 边缘节点：
-  |- CI/CD流水线功能
+  |- 批处理任务
   |- 作业调度
   |- 状态检查/日志上报（第二版）
 ```
